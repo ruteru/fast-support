@@ -17,11 +17,11 @@ pip install fast-support
 from fastapi import FastAPI
 from firebase_functions import https_fn, options
 from fast_support import router
-import health
+import hello_world
 
 my_name = FastAPI()
 
-my_name.include_router(health.app)
+my_name.include_router(hello_world.app)
 
 @https_fn.on_request(cors=options.CorsOptions(cors_origins=['*'], cors_methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']))
 def myfunction(req: https_fn.Request) -> https_fn.Response:
