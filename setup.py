@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="fast-support",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Andres Garcia",
+    author_email="garcicon45@gmail.com",
     description="A package for supporting FastAPI applications",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your_username/fast-support",
+    url="https://github.com/ruteru/fast-support",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
